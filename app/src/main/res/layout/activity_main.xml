@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent" android:layout_height="220dp"
+        android:background="#000000" />
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Search channels or group (news, sports, India...)"
+        android:inputType="text" android:padding="12dp" />
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Loading channels..." android:padding="8dp" />
+    <ListView
+        android:id="@+id/channels"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
